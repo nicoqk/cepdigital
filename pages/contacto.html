@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP Digital Soluciones IT</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="CEP Digital">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img src="../img/portcont.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+    </div>
+
+    <section class="intro-content-ct"><h1><span class="txtCEP">Contacto</span></h1>
+    </section>
+
+    <section class="contacto">
+        <div class="contenedor-formulario-ct">
+              <p class="txt-ct">Envíenos su consulta ahora.</p>
+            
+            <form method="POST" action="enviar.php">
+              <div class="mb-3">
+                  <input type="input" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
+              </div>
+      
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+      
+              <div class="mb-3">
+                  <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Teléfono"
+                      required>
+              </div>
+      
+              <div class="mb-3">
+                  <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Mensaje"
+                      required></textarea>
+              </div>
+    
+              <div class="mb-3">       
+                <div class="g-recaptcha" data-sitekey="6Lf65iwdAAAAADIowe7TuFNDt6a8K9Y-7ArM-dYS"></div>
+              </div>
+    
+              <div class="mb-3">
+                  <button type="submit" class="btn-dark w-100 fs-5 txt-cep">Enviar Mensaje</button>
+              </div>
+            </form> 
+        </div>
+        <div class="vias-contacto">
+            <p class="txt-ct">Vías de contacto.</p>
+            <div class="item">
+                <i class="bi bi-whatsapp"></i>
+                <p class="title">Whatsapp:</p>
+                <p class="cont"><a href="https://api.whatsapp.com/send?phone=5491133679805" target="_blank">+54.911.3367.9805</a></p>
+            </div>
+            <div class="item">
+                <i class="bi bi-phone"></i>
+                <p class="title">Celular:</p>
+                <p class="cont">+54.11.3367.9805</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-telephone"></i>
+                <p class="title">Telefono:</p>
+                <p class="cont">+54.11.2201.7933</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-envelope-at"></i>
+                <p class="title">E-Mail:</p>
+                <p class="cont"><a href="mailto:info@cepdigital.com">info@cepdigital.com</a>
+                </p>
+            </div>
+            <div class="item">
+                <i class="bi bi-instagram"></i>
+                <p class="title">Instagram:</p>
+                <p class="cont"><a href="https://www.instagram.com/cep.digital" target="_blank">@cep.digital</a></p>
+            </div>
+            <div class="item">
+                <i class="bi bi-facebook"></i>
+                <p class="title">Facebook:</p>
+                <p class="cont"><a href="https://www.facebook.com/cepdigital" target="_blank">/cepdigital</a></p>
+            </div>
+        </div>
+    </section>
+
+   
+       
+    <footer>
+      <h4>CEP Digital ©2024. Todos los derechos reservados.</h4>
+      <div class="iconos">
+        <a href="https://www.instagram.com/cep.digital" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/cepdigital" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5491133679805" target="_blank"><i class="bi bi-whatsapp"></i></a>      
+      </div>
+    </footer>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</html>

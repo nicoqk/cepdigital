@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEP Digital Soluciones IT</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
@@ -35,39 +36,36 @@
     </div>
 
     <section class="intro-content-ct"><h1><span class="txtCEP">Contacto</span></h1>
+        <p>Comuníquese mediante cualquiera de nuestras vías de contacto!.</p>
     </section>
 
     <section class="contacto">
         <div class="contenedor-formulario-ct">
               <p class="txt-ct">Envíenos su consulta ahora.</p>
             
-            <form method="POST" action="enviar.php">
-              <div class="mb-3">
-                  <input type="input" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
-              </div>
-      
-              <div class="mb-3">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-              </div>
-      
-              <div class="mb-3">
-                  <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Teléfono"
-                      required>
-              </div>
-      
-              <div class="mb-3">
-                  <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Mensaje"
-                      required></textarea>
-              </div>
-    
-              <div class="mb-3">       
-                <div class="g-recaptcha" data-sitekey="6Lf65iwdAAAAADIowe7TuFNDt6a8K9Y-7ArM-dYS"></div>
-              </div>
-    
-              <div class="mb-3">
-                  <button type="submit" class="btn-dark w-100 fs-5 txt-cep">Enviar Mensaje</button>
-              </div>
-            </form> 
+              <form action="https://formspree.io/f/xvoeryor" method="POST">
+                <div class="mb-3">
+                    <input type="input" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                </div>
+        
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+        
+                <div class="mb-3">
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono"
+                        required>
+                </div>
+        
+                <div class="mb-3">
+                    <textarea class="form-control" name="messaje" id="message" rows="4" placeholder="Mensaje"
+                        required></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeLroYpAAAAAEkWLgpaiJC-Rjlq-zKXhBr3WJQa"></div>
+                <div class="mb-3">
+                    <button type="submit" class="btn-dark w-100 fs-5 txt-cep">Enviar Mensaje</button>
+                </div>
+              </form> 
         </div>
         <div class="vias-contacto">
             <p class="txt-ct">Vías de contacto.</p>

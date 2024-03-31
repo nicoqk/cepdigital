@@ -674,6 +674,7 @@ form {
         opacity: 0.9;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         width:60%;
+        height: 100%;
 
     }
     .nav.visible {
@@ -697,6 +698,7 @@ form {
     }
     .nav-list li a:hover {
         color: #fff;
+        border-bottom: none;
     }
     .intro-content, .outro-content{
         font-size: 1.3rem;

@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEP Digital Soluciones IT</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="container-boton">
         <a href="https://wa.me/5491133679805" target="_blank">
-            <img class="boton" src="img/waap.png" alt="">
+            <img class="boton" src="./img/waap.png" alt="">
         </a>
     </div>
     <header>
-        <img class="logo" src="img/logo.png" alt="CEP Digital">
+        <img class="logo" src="./img/logo.png" alt="CEP Digital">
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
@@ -89,9 +89,9 @@
     </section>
     <section class="outro-content"><h1>Mas de 15 años de experiencia <span class="txtCEP">puestos al servicio de su empresa.</span></h1>
         <p>Contamos con un equipo de profesionales altamente capacitados y con vasta experiencia en las diferentes áreas de la tecnología IT</p>
-        <div class="equipo">
+        <!-- <div class="equipo">
             <img src="img/equipo.jpg" class="imgEquipo" alt="">
-        </div>
+        </div> -->
     </section>
 
     <section class="seccion-contacto">
@@ -108,7 +108,7 @@
               <h2 class="">Contáctenos ahora!</h2>
               <p class="">Haga su consulta completando el formulario.</p>
             
-            <form action="https://formspree.io/f/xvoeryor" method="POST">
+            <form action="./script/enviar.php" method="POST">
               <div class="mb-3">
                   <input type="input" class="form-control" id="name" name="name" placeholder="Nombre" required>
               </div>
@@ -123,10 +123,10 @@
               </div>
       
               <div class="mb-3">
-                  <textarea class="form-control" name="messaje" id="message" rows="4" placeholder="Mensaje"
+                  <textarea class="form-control" name="message" id="message" rows="4" placeholder="Mensaje"
                       required></textarea>
               </div>
-              <div class="g-recaptcha" data-sitekey="6LeLroYpAAAAAEkWLgpaiJC-Rjlq-zKXhBr3WJQa"></div>
+              <div class="g-recaptcha" data-sitekey="6Lf65iwdAAAAADIowe7TuFNDt6a8K9Y-7ArM-dYS"></div>
               <div class="mb-3">
                   <button type="submit" class="btn-dark w-100 fs-5 txt-cep">Enviar Mensaje</button>
               </div>
@@ -141,7 +141,8 @@
         <a href="https://api.whatsapp.com/send?phone=5491133679805" target="_blank"><i class="bi bi-whatsapp"></i></a>      
       </div>
     </footer>
-  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
